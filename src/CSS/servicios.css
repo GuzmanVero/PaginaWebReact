@@ -1,0 +1,75 @@
+.titulo{
+    background-color: rgb(49, 125, 125);
+    color: rgb(237, 248, 248);
+    margin: auto;
+    font-size: 30px;
+    width: 100% ;
+    height: 100px;
+}
+.titulo2{
+    margin: auto;
+   text-align: center;
+   height: auto;
+}
+.contenedor0{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0 235px; 
+}
+.comodidad{
+    margin: 0 45px;
+    text-align: center;
+}
+.tratamientos{
+    margin: 0 45px;
+    text-align: center;
+}
+.medicamentos{
+    margin: 0 45px;
+    text-align: center;
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0 235px; 
+}
+
+.informacion{
+    margin: 0 45px;
+    text-align: center;
+}
+.alimentacion{
+    margin: 0 45px;
+    text-align: center;
+}
+.prevencion{
+    margin: 0 45px;
+    text-align: center;
+}
+.cuadro{
+    background-color: rgb(50, 150, 150);
+    padding: 75px;
+    margin: auto;
+    width: 500px;
+    height: auto;
+}       
+.cuadrointerno{
+    background-color: rgb(249, 245, 241);
+}
+.cuadrotigre{
+    background-color: rgb(237, 244, 244);
+    padding: 75px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}       
+.tigre{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+}
