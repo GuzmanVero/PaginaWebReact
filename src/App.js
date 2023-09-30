@@ -10,11 +10,22 @@ import './CSS/header.css';
 import './CSS/index.css'
 import './CSS/footer.css'
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
+
 function App() {
   return (
     <div className="App">
-
-      <Header/>
+      <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route exact path="/" component={App} />
+          <Route path="/about" component={Contenedor1} />
+          <Route path="/pagina2" component={Contenedor2Titulo} />
+        </Routes>
+      </div>
+      </Router>
       <Contenedor0/>
       <Contenedor1/>
       <Contenedor2Titulo/>
@@ -23,7 +34,6 @@ function App() {
       <Contenedor4Title/>
       <Contenedor4/>
       <FooterContenedor/> 
-
     </div>
   );
 }
@@ -39,12 +49,12 @@ function Header() {
       <div className="menuheader">
         <table className="menu" border="1" cellpadding="5">
           <tr>
-            <th><a href="index.html" className="enlaceheader" style={{textDecoration: 'none'}}>Inicio</a></th>
-            <th><a href="nosotrosl.html" className="enlaceheader" style={{textDecoration: 'none'}}>Nosotros</a></th>
-            <th><a href="servicios.html" className="enlaceheader" style={{textDecoration: 'none'}}>Servicios</a></th>
-            <th><a href="Contacto.html" className="enlaceheader" style={{textDecoration: 'none'}}>Contacto</a></th>
-            <th><a href="Registro.html" className="enlaceheader" style={{textDecoration: 'none'}}>Registro</a></th>
-            <th><a href="iniciarsesion.html" className="enlaceheader" style={{textDecoration: 'none'}}>Inicio sesión</a></th>
+            <th><Link to="/" className="enlaceheader" style={{textDecoration: 'none'}}>Inicio</Link></th>
+            <th><Link to="/about" className="enlaceheader" style={{textDecoration: 'none'}}>Nosotros</Link></th>
+            <th><Link to="/servicios" className="enlaceheader" style={{textDecoration: 'none'}}>Servicios</Link></th>
+            <th><Link to="/contacto" className="enlaceheader" style={{textDecoration: 'none'}}>Contacto</Link></th>
+            <th><Link to="/registro" className="enlaceheader" style={{textDecoration: 'none'}}>Registro</Link></th>
+            <th><Link to="/iniciarsesion" className="enlaceheader" style={{textDecoration: 'none'}}>Inicio sesión</Link></th>
           </tr>
         </table>           
       </div>     
