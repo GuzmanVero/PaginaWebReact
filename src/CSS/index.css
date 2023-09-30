@@ -60,7 +60,7 @@
 .contenedor2{
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 700px;
     margin: 0 235px;    
 }
 .reunion{
@@ -85,34 +85,35 @@
 }
 
 .doctora1{
-    margin: 0 20px;
+    margin: 0 40px;
+    align-items: center;
  
 }
 .ramos{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-image: url(../Images/20230414_2002461-scaled.jpg);
     background-size:84%;
     border-radius: 50%;
     margin: auto auto;
 }
 .doctora2{
-    margin: 0 20px;
+    margin: 0 40px;
 }
 .guzman{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-image: url(../Images/vero.jpg);
     background-size:84%;
     border-radius: 50%;
     margin: auto auto;
 }
 .doctora3{
-    margin: 0 20px;
+    margin: 0 40px;
 }
 .rodriguez{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-image: url(../Images/paty.jpg);
     background-size:84%;
     border-radius: 50%;
