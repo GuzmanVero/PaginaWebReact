@@ -1,20 +1,20 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Componentes/Index/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Policies from './pages/Policies';
-import './pages/CSS/home.css'
-import './pages/CSS/nosotros.css'
+import Header from './Componentes/Header/Header'
+import Footer from './Componentes/Footer/Footer';
 
 function App() {
   return (
     <Router>
-      <div>
-        
+      <div>    
+        <Header/>   
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -24,6 +24,7 @@ function App() {
           <Route path="/Policies" element={<Policies />} />
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

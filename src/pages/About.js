@@ -1,9 +1,6 @@
 import React from 'react';
 
-import logoC from './Images/cropped-tweb.png';
 import reu from './Images/reunion.jpg'
-import './CSS/header.css';
-import './CSS/footer.css'
 import './CSS/nosotros.css'
 
 import { Link } from 'react-router-dom';
@@ -11,35 +8,8 @@ import { Link } from 'react-router-dom';
 function About() {
   return(
     <React.Fragment>
-        <Header/>
         <Contenedor0TileBody/>
-        <FooterContenedor/>
     </React.Fragment>
-  );
-}
-
-function Header() {
-    return (
-      <header>
-        <div className="logo">
-          <img width="110" height="117" className="logo" src={logoC} alt="LogoEmpresa" />
-          <p><h2>Citas Medicas </h2>
-          <br/>Los mejores servicios y atencion medica </p>      
-        </div> 
-        <div className="menuheader">
-          <table className="menu" border="1" cellpadding="5">
-            <tr>
-            <td><Link to="/" className="enlacefooter" style={{textDecoration:"none"}}>Inicio</Link></td>
-            <td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Nosotros</Link></td>
-            <td><Link to="/Services" className="enlacefooter" style={{textDecoration:"none"}}>Servicios</Link></td>
-            <td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contacto</Link></td>
-            <td><Link to="/SignUp" className="enlacefooter" style={{textDecoration:"none"}}>Registro</Link></td>
-            <td><Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Inicio sesion</Link></td>
-          </tr>
-        </table>           
-      </div>   
-       
-    </header>
   );
 }
 
@@ -78,57 +48,6 @@ function Contenedor0TileBody(){
         </div>
     </div>
 </section>
-    );
-}
-
-function FooterContenedor(){
-    return(
-      <footer className="footer" style={{border: "1px solid"}}>
-        <div className="contenedor">
-          <div className="columna1">
-            <table >
-                <tr>
-                    <th>
-                        <p>Te ofrecemos los mejores servicios veterinarios. </p>
-                        <p>Contamos con alta experiencia en la salud de los animales.</p>
-                    </th>
-                </tr>
-                <tr><td>logoface</td></tr>
-            </table>
-        </div>
-  
-        <div className="columna2">
-          <table >
-              <tr><th><h3>Quick Links</h3></th></tr>
-              <tr><td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Hacerca de nosotros</Link></td></tr>
-              <tr><td><Link to="/Policies" className="enlacefooter" style={{textDecoration:"none"}}>Politicas de privacidad</Link></td></tr>
-              <tr><td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contactanos</Link></td></tr>
-          </table>   
-        </div>
-  
-        <div className="columna3">
-            <table >
-                <tr><th><h3>Services</h3></th></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Vitaminas</Link></td></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Todos los servicios</Link></td></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Tratamientos</Link></td></tr>
-            </table> 
-        </div>
-  
-        <div className="columna4">
-          <table >
-            <tr><th><h3>Horarios de servicios</h3></th></tr>
-            <tr><td>Lunes: 09.00 – 16.00</td></tr>
-            <tr><td>Martes: 09.00 – 16.00</td></tr>
-            <tr><td>Miercoles: 09.00 – 16.00</td></tr>
-            <tr><td>Jueves: 09.00 – 16.00</td></tr>
-            <tr><td>Viernes: 09.00 – 16.00</td></tr>
-            <tr><td>Sabado: Cerrado</td></tr>
-            <tr><td>Domingo: Cerrado</td></tr>
-          </table>
-        </div>
-        </div>            
-      </footer> 
     );
 }
 

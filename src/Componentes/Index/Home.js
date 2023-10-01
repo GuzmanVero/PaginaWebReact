@@ -1,59 +1,28 @@
 import React from 'react';
 
-import logoC from './Images/cropped-tweb.png';
 import lobo from './Images/lobo.jpg';
 import imagen1 from './Images/AdobeStock_107432576-scaled-1.jpeg';
 import medicina from './Images/medicamt3.jpg';
-import medicamento from './Images/medicamto1.jpg'
-import gato from './Images/gato-.jpg'
-import reu from './Images/reunion.jpg'
-import './CSS/header.css';
-import './CSS/home.css'
-import './CSS/footer.css'
-import { Link } from 'react-router-dom';
+import medicamento from './Images/medicamto1.jpg';
+import gato from './Images/gato-.jpg';
+import reu from './Images/reunion.jpg';
+import './Home.css';
+
 
 function Home(){
     return(
         <React.Fragment>
-            <Header/>
-            <Contenedor0/>
-            <Contenedor1/>
-            <Contenedor2Titulo/>
-            <Contenedor2Body/>
-            <Contenedor3/>
-            <Contenedor4Title/>
-            <Contenedor4/>
-            <FooterContenedor/>
+            <ComTitleVer/>
+            <ComService/>
+            <ComVetTitle/>
+            <ComServiceBody/>
+            <ComTitleLic/>
+            <ComTitledoc/>
+           <ComDoctors/>
         </React.Fragment>
     );
 }
-
-function Header() {
-    return (
-      <header>
-        <div className="logo">
-          <img width="110" height="117" className="logo" src={logoC} alt="LogoEmpresa" />
-          <p><h2>Citas Medicas </h2>
-          <br/>Los mejores servicios y atencion medica </p>      
-        </div> 
-        <div className="menuheader">
-          <table className="menu" border="1" cellpadding="5">
-            <tr>
-            <td><Link to="/" className="enlaceheader" style={{textDecoration:"none"}}>Inicio</Link></td>
-            <td><Link to="/About" className="enlaceheader" style={{textDecoration:"none"}}>Nosotros</Link></td>
-            <td><Link to="/Services" className="enlaceheader" style={{textDecoration:"none"}}>Servicios</Link></td>
-            <td><Link to="/Contact" className="enlaceheader" style={{textDecoration:"none"}}>Contacto</Link></td>
-            <td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>
-            <td><Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Inicio sesion</Link></td>
-          </tr>
-        </table>           
-      </div>   
-       
-    </header>
-  );
-}
-
-function Contenedor0(){
+function ComTitleVer(){
   return(
     <div>
     <section>
@@ -89,7 +58,7 @@ function Contenedor0(){
   );
 }
 
-function Contenedor1(){
+function ComService(){
   return(
     <section>           
       <div className="imagen2"> 
@@ -106,7 +75,7 @@ function Contenedor1(){
           </tr>
           <tr>
             <td>
-              <img className='imahen1' src={imagen1} alt="" width="1024" height="683" />
+              <img className='imagen3' src={imagen1} alt="" width="1024" height="683" />
             </td>
           </tr>
         </table>
@@ -116,7 +85,7 @@ function Contenedor1(){
   );
 }
 
-function Contenedor2Titulo(){
+function ComVetTitle(){
   return(
     <table className="titulo2" >
       <tr>
@@ -130,7 +99,7 @@ function Contenedor2Titulo(){
   );
 }
 
-function Contenedor2Body(){
+function ComServiceBody(){
   return(
     <div>
     <div className="contenedor1">
@@ -145,7 +114,7 @@ function Contenedor2Body(){
 
       <div className="prevencion">
         <table >
-          <tr><td><img className='medicamento' src={medicamento} alt="" width="300" height="300" /></td></tr>
+          <tr><td><img className='medicamento' src={medicamento} alt="" width="300" height="300"/></td></tr>
           <tr><th><h3>Prevención y control</h3></th></tr>
           <tr><td>El chequeo es necesario tus mascotas también necesitan un control, 
               nos encargamos de mantener su buena salud.</td></tr>
@@ -167,7 +136,7 @@ function Contenedor2Body(){
   );
 }
 
-function Contenedor3(){
+function ComTitleLic(){
   return(     
   <div className="contenedor2">
         <div>            
@@ -190,9 +159,10 @@ function Contenedor3(){
   );
 }
 
-function Contenedor4Title(){
+function ComTitledoc(){
   return(
     <div>
+      <br/><br/>
       <table className="titulo2">
         <tr>
           <td>
@@ -201,14 +171,14 @@ function Contenedor4Title(){
           </td>
         </tr>
       </table>
-      
+      <br/>
     </div>
   );
 }
-  
-function Contenedor4(){
+
+function ComDoctors(){
   return(
-    <div className="contenedor3">
+    <div className="doctors">
       <br/><br/>
         <div className="doctora1">
             <table >
@@ -263,61 +233,9 @@ function Contenedor4(){
                     <td><h3>Miss Rodríguez</h3></td>
                 </tr>
             </table>
-        </div>
-        
+        </div>   
     </div>
   );
-}
-  
-function FooterContenedor(){
-    return(
-      <footer className="footer" style={{border: "1px solid"}}>
-        <div className="contenedor">
-          <div className="columna1">
-            <table >
-                <tr>
-                    <th>
-                        <p>Te ofrecemos los mejores servicios veterinarios. </p>
-                        <p>Contamos con alta experiencia en la salud de los animales.</p>
-                    </th>
-                </tr>
-                <tr><td>logoface</td></tr>
-            </table>
-        </div>
-  
-        <div className="columna2">
-          <table >
-              <tr><th><h3>Quick Links</h3></th></tr>
-              <tr><td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Hacerca de nosotros</Link></td></tr>
-              <tr><td><Link to="/Policies" className="enlacefooter" style={{textDecoration:"none"}}>Politicas de privacidad</Link></td></tr>
-              <tr><td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contactanos</Link></td></tr>
-          </table>   
-        </div>
-  
-        <div className="columna3">
-            <table >
-                <tr><th><h3>Services</h3></th></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Vitaminas</Link></td></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Todos los servicios</Link></td></tr>
-                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Tratamientos</Link></td></tr>
-            </table> 
-        </div>
-  
-        <div className="columna4">
-          <table >
-            <tr><th><h3>Horarios de servicios</h3></th></tr>
-            <tr><td>Lunes: 09.00 – 16.00</td></tr>
-            <tr><td>Martes: 09.00 – 16.00</td></tr>
-            <tr><td>Miercoles: 09.00 – 16.00</td></tr>
-            <tr><td>Jueves: 09.00 – 16.00</td></tr>
-            <tr><td>Viernes: 09.00 – 16.00</td></tr>
-            <tr><td>Sabado: Cerrado</td></tr>
-            <tr><td>Domingo: Cerrado</td></tr>
-          </table>
-        </div>
-        </div>            
-      </footer> 
-    );
 }
 
 export default Home;

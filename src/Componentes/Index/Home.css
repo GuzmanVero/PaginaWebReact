@@ -34,9 +34,10 @@
 }
 .imagen2{ 
     margin: auto;
-    width: 900px ;
-    height: 900px;
- }
+    width: 1000px ;
+    height: 900px;   
+    text-align: center;
+}
 .titulo2{
     margin: auto;
    text-align: center;
@@ -44,8 +45,8 @@
 .contenedor1{
     display: flex;
     justify-content: center;
-    height: 390px;
-    margin: 0 235px;    
+    height: 400px;
+    margin: 0 450px;    
 }
 
 .medicina{
@@ -61,7 +62,7 @@
     display: flex;
     justify-content: center;
     height: 700px;
-    margin: 0 235px;    
+    margin: 0 450px;    
 }
 .reunion{
     margin: auto;
@@ -77,10 +78,10 @@
     height: 600px;
     margin: auto;
 }
-.contenedor3{
+.doctors{
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     margin: 0 235px;    
 }
 
@@ -92,7 +93,7 @@
 .ramos{
     width: 100px;
     height: 100px;
-    background-image: url(../Images/20230414_2002461-scaled.jpg);
+    background-image: url(./Images/20230414_2002461-scaled.jpg);
     background-size:84%;
     border-radius: 50%;
     margin: auto auto;
@@ -103,7 +104,7 @@
 .guzman{
     width: 100px;
     height: 100px;
-    background-image: url(../Images/vero.jpg);
+    background-image: url(./Images/vero.jpg);
     background-size:84%;
     border-radius: 50%;
     margin: auto auto;
@@ -114,7 +115,7 @@
 .rodriguez{
     width: 100px;
     height: 100px;
-    background-image: url(../Images/paty.jpg);
+    background-image: url(./Images/paty.jpg);
     background-size:84%;
     border-radius: 50%;
     margin: auto auto;
