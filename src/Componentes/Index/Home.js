@@ -16,9 +16,9 @@ function Home(){
             <ComService/>
             <ComVetTitle/>
             <ComServiceBody/>
-           {/* <ComTitleLic/>
+           <ComTitleLic/>
             <ComTitledoc/>
-    <ComDoctors/>*/}
+    <ComDoctors/>{/* */}
         </React.Fragment>
     );
 }
