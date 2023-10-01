@@ -7,6 +7,8 @@ import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Policies from './pages/Policies';
+import './pages/CSS/home.css'
+import './pages/CSS/nosotros.css'
 
 function App() {
   return (

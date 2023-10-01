@@ -8,7 +8,7 @@ import medicamento from './Images/medicamto1.jpg'
 import gato from './Images/gato-.jpg'
 import reu from './Images/reunion.jpg'
 import './CSS/header.css';
-import './CSS/index.css'
+import './CSS/home.css'
 import './CSS/footer.css'
 import { Link } from 'react-router-dom';
 
@@ -39,11 +39,11 @@ function Header() {
         <div className="menuheader">
           <table className="menu" border="1" cellpadding="5">
             <tr>
-            <td><Link to="/" className="enlacefooter" style={{textDecoration:"none"}}>Inicio</Link></td>
-            <td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Nosotros</Link></td>
-            <td><Link to="/Services" className="enlacefooter" style={{textDecoration:"none"}}>Servicios</Link></td>
-            <td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contacto</Link></td>
-            <td><Link to="/SignUp" className="enlacefooter" style={{textDecoration:"none"}}>Registro</Link></td>
+            <td><Link to="/" className="enlaceheader" style={{textDecoration:"none"}}>Inicio</Link></td>
+            <td><Link to="/About" className="enlaceheader" style={{textDecoration:"none"}}>Nosotros</Link></td>
+            <td><Link to="/Services" className="enlaceheader" style={{textDecoration:"none"}}>Servicios</Link></td>
+            <td><Link to="/Contact" className="enlaceheader" style={{textDecoration:"none"}}>Contacto</Link></td>
+            <td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>
             <td><Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Inicio sesion</Link></td>
           </tr>
         </table>           
@@ -57,13 +57,13 @@ function Contenedor0(){
   return(
     <div>
     <section>
-      <table  className="titulo">
+      <table  className="titulohome">
         <tr>
           <th><h1>ANIMALS CLINIC</h1></th>
         </tr>
       </table>
 
-      <div className="contenedor0">
+      <div className="verifica">
         <div >            
           <table  className="imagen1">
             <tr>

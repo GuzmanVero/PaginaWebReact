@@ -4,7 +4,7 @@ import logoC from './Images/cropped-tweb.png';
 import reu from './Images/reunion.jpg'
 import './CSS/header.css';
 import './CSS/footer.css'
-import './CSS/contacto.css'
+import './CSS/nosotros.css'
 
 import { Link } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ function Header() {
 function Contenedor0TileBody(){
     return(
         <section>
-    <table border="1" className="titulo">
+    <table className="titulo">
         <tbody>
             <tr>
                 <th><h1>Acerca de Nosotros</h1></th>
