@@ -6,14 +6,15 @@
     width: 100% ;
     height: 100px;
 }
-.contenedor0{
+.conBodynosotros{
     background-color: rgb(238, 250, 250);
     display: flex;
     justify-content: center;
-    width: 900px ;
-    height: 400px;
+    width: 1000px ;
+    height: 450px;
     margin: auto;
-    text-align:justify
+    text-align:justify;
+    font-size: 20px;
 }
 .imagen1{ 
     align-items: center;
@@ -21,39 +22,46 @@
     height: 100px;
     margin-left: auto;   
 }
-.titulo2{
+.titlevalores{
     margin: auto;
    text-align: center;
    height: auto;
+   font-size: 60px;
 }
-.contenedor1{
-    justify-content: center;
-    height: auto;
-    width: 900px;
-    margin: 0 auto;    
+.titleValores{
+    font-size: 40px; 
+    color:blue;
 }
 
+.conBodyValores{
+    justify-content: center;
+    height: 520px;
+    width: 1000px;
+    margin: 0 auto;    
+    font-size: 20px;
+}
 .valores{
     margin: auto 20px;
     height: auto;
  
 }
-.contenedor2{
+.conTexRoma{
     background-color: rgb(238, 250, 250);
     display: flex;
     justify-content: center;
-    width: 900px ;
+    width: 1050px ;
     height: 400px;
     margin: auto;
+    font-size: 20px;
 }
-.imagen2{ 
+.imagenroma{ 
     align-items: center;
     padding: 10px;
     height: 100px;
     margin-left: auto; 
     margin: auto;  
 }
-.contenedor3{
+.coninfo{
     justify-content: center;
     background-color: rgb(22, 23, 23);
     color: rgb(237, 248, 248);

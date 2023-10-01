@@ -16,9 +16,9 @@ function Home(){
             <ComService/>
             <ComVetTitle/>
             <ComServiceBody/>
-            <ComTitleLic/>
+           {/* <ComTitleLic/>
             <ComTitledoc/>
-           <ComDoctors/>
+    <ComDoctors/>*/}
         </React.Fragment>
     );
 }
@@ -87,7 +87,7 @@ function ComService(){
 
 function ComVetTitle(){
   return(
-    <table className="titulo2" >
+    <table className="titlevet" >
       <tr>
         <td>
           <div style={{color: 'blue'}}>COMO VETERINARIO</div>
@@ -102,10 +102,10 @@ function ComVetTitle(){
 function ComServiceBody(){
   return(
     <div>
-    <div className="contenedor1">
+    <div className="comservicebody">
       <div className="medicina">
         <table >
-          <tr><td><img className='medicina' src={medicina} alt="" width="300" height="300" /></td></tr>
+          <tr><td><img className='medicina' src={medicina} alt="" width="350" height="300" /></td></tr>
           <tr><th><h3>Medicina</h3></th></tr>
           <tr><td>Cada mascota es única y especial y así es como debe ser tratado, 
               se medica según sus necesidades y condiciones.</td></tr>
@@ -114,7 +114,7 @@ function ComServiceBody(){
 
       <div className="prevencion">
         <table >
-          <tr><td><img className='medicamento' src={medicamento} alt="" width="300" height="300"/></td></tr>
+          <tr><td><img className='medicamento' src={medicamento} alt="" width="400" height="300"/></td></tr>
           <tr><th><h3>Prevención y control</h3></th></tr>
           <tr><td>El chequeo es necesario tus mascotas también necesitan un control, 
               nos encargamos de mantener su buena salud.</td></tr>
@@ -123,7 +123,7 @@ function ComServiceBody(){
 
       <div className="cuidados">
         <table >
-          <tr><td><img className='gato' src={gato} alt="" width="300" height="300" /></td></tr>
+          <tr><td><img className='gato' src={gato} alt="" width="350" height="300" /></td></tr>
           <tr><th><h3>Cuidados</h3></th></tr>
           <tr><td>Nos especializamos en los cuidados adecuados para cada tipo de mascota, 
               facilitando la estadía y su recuperación en el proceso.</td></tr>
@@ -138,11 +138,11 @@ function ComServiceBody(){
 
 function ComTitleLic(){
   return(     
-  <div className="contenedor2">
+  <div className="comtitlelic">
         <div>            
           <table className="reunion">
             <tr style={{paddingTop: '5em'}}>
-              <th className="color">
+              <th className="colorbodylic">
                 <h1>Licenciatura en Médico Veterinario y Zootecnista</h1>
                 <p>Los médicos veterinarios zootecnistas, son los profesionistas encargados 
                     de mantener la salud, así como de atender, prevenir y controlar las enfermedades de los animales.</p>
@@ -163,7 +163,7 @@ function ComTitledoc(){
   return(
     <div>
       <br/><br/>
-      <table className="titulo2">
+      <table className="titulodoc">
         <tr>
           <td>
             <div style={{fontSize: '1em', color: 'blue'}}>Su comodidad y bienestar es nuestra prioridad</div>

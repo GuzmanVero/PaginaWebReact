@@ -38,11 +38,11 @@
     height: 900px;   
     text-align: center;
 }
-.titulo2{
+.titlevet{
     margin: auto;
    text-align: center;
 }
-.contenedor1{
+.comservicebody{
     display: flex;
     justify-content: center;
     height: 400px;
@@ -58,7 +58,7 @@
 .cuidados{
     margin: 0 45px;
 }
-.contenedor2{
+.comtitlelic{
     display: flex;
     justify-content: center;
     height: 700px;
@@ -71,12 +71,16 @@
     height: 100px;
     margin-left: auto;      
 }
-.color{
+.colorbodylic{
     background-color: rgb(49, 125, 125);
     justify-content: center;
-    width: 500px ;
-    height: 600px;
+    width: 900px ;
+    height: 650px;
     margin: auto;
+}
+.titulodoc{
+    margin: auto;
+   text-align: center;
 }
 .doctors{
     display: flex;

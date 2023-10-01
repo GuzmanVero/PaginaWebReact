@@ -2,11 +2,11 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Componentes/Index/Home';
 import About from './Componentes/About/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import SignUp from './pages/SignUp';
-import Login from './pages/Login';
-import Policies from './pages/Policies';
+import Services from './Componentes/Servicesp/Services';
+import Contact from './Componentes/Contact/Contact';
+import SignUp from './Componentes/SignUp/SignUp';
+import Login from './Componentes/Login/Login';
+import Policies from './Componentes/Policies/Policies';
 import Header from './Componentes/Header/Header'
 import Footer from './Componentes/Footer/Footer';
 

@@ -1,17 +1,22 @@
 import React from 'react';
 
-import reu from './Images/reunion.jpg'
+import reu from './reunion.jpg'
+import perrodibujo from './undraw_Good_doggy_re_eet7.png'
 import './Nosotros.css'
 
 function About() {
   return(
     <React.Fragment>
-        <Contenedor0TileBody/>
+        <ComTitleAbout/>
+        <ComTitleValores/>
+        <ComBodyValores/>
+        <ComTextRomanos/>
+        <ComInfoLocal/>
     </React.Fragment>
   );
 }
 
-function Contenedor0TileBody(){
+function ComTitleAbout(){
     return(
         <section>
     <table className="titulo">
@@ -22,7 +27,7 @@ function Contenedor0TileBody(){
         </tbody>
     </table>
 
-    <div className="contenedor0">
+    <div className="conBodynosotros">
         <div>            
             <table className="imagen1">
                 <tbody>
@@ -46,6 +51,102 @@ function Contenedor0TileBody(){
         </div>
     </div>
 </section>
+    );
+}
+
+function ComTitleValores(){
+    return(
+    <table className="titlevalores">
+        <tr>
+            <td>
+                <div>
+                    <p className='titleValores'>Nuestros valores</p>
+                    <p lassName='bodyValores'>Nuestro trabajo se basa en gran medida en nuestros valores fundamentales</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    );
+}
+
+function ComBodyValores(){
+    return(
+    <div className="conBodyValores">
+        <div className="valores">   
+            <table>
+                <tr>
+                    <td>
+                        <p style={{ fontSize: '3', color: 'blue' }}>01.</p>
+                        <h3>Compasión</h3>
+                        <p>Nuestro objetivo es comprender y atender las necesidades y deseos de los pacientes y colegas, escuchando atentamente y poniéndonos en el lugar de las personas.</p>
+                    </td>
+                    <td>
+                        <p style={{ fontSize: '3', color: 'blue' }}>02.</p>
+                        <h3>Progresión</h3>
+                        <p>Queremos seguir adaptándonos a las diferentes situaciones, con ganas de aprender y esforzándonos por ser mejores. Aprendizaje de nuevas tendencias y necesidades.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style={{ fontSize: '3', color: 'blue' }}>03.</p>
+                        <h3>Respeto</h3>
+                        <p>Respetar a todos los que conocemos y tratarlos como queremos ser tratados. Ya sea un colega o un paciente, la comprensión y el respeto son importantes.</p>
+                    </td>
+                    <td>
+                        <p style={{ fontSize: '3', color: 'blue' }}>04.</p>
+                        <h3>Coraje</h3>
+                        <p>Somos los expertos en nuestro campo. Por lo tanto, es importante tener el coraje de hacer lo correcto sabiendo que es por el bien de la nuestros pequeños que están con nosotros</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    );
+}
+
+function ComTextRomanos(){
+    return(
+    <div className="conTexRoma">
+    <div>            
+        <table className=" imagenroma">
+            <tbody>
+                <tr>
+                    <th>
+                        <img width="500" height="350" className='perrodibujo'src={perrodibujo} alt="imagenveterinaria" />
+                    </th>
+                    <td>
+                         <p>Pese a que los romanos sabían de la importancia de tener animales sanos para el buen
+                            funcionamiento del ejército y de su economía, durante muchísimo tiempo no existió la
+                            figura del veterinario especializado, y mucho menos una institución donde se formase a esos especialistas.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+);
+}
+
+function ComInfoLocal(){
+    return(
+    <table className="coninfo">
+    <tbody>
+        <tr>
+            <th>
+                <p>Teléfono</p>
+                <p>+503 7037-0932</p>
+            </th>
+            <th>
+                <p>123 Fifth Ave, New York,</p>
+                <p>NY 12004, USA</p>
+            </th>
+            <th>
+                <p>Realiza tu cita en línea</p>
+            </th>
+        </tr>
+    </tbody>
+    </table>
+
     );
 }
 
