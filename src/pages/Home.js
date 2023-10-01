@@ -10,6 +10,7 @@ import reu from './Images/reunion.jpg'
 import './CSS/header.css';
 import './CSS/index.css'
 import './CSS/footer.css'
+import { Link } from 'react-router-dom';
 
 function Home(){
     return(
@@ -38,7 +39,12 @@ function Header() {
         <div className="menuheader">
           <table className="menu" border="1" cellpadding="5">
             <tr>
-              
+            <td><Link to="/" className="enlacefooter" style={{textDecoration:"none"}}>Inicio</Link></td>
+            <td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Nosotros</Link></td>
+            <td><Link to="/Services" className="enlacefooter" style={{textDecoration:"none"}}>Servicios</Link></td>
+            <td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contacto</Link></td>
+            <td><Link to="/SignUp" className="enlacefooter" style={{textDecoration:"none"}}>Registro</Link></td>
+            <td><Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Inicio sesion</Link></td>
           </tr>
         </table>           
       </div>   
@@ -282,19 +288,19 @@ function FooterContenedor(){
         <div className="columna2">
           <table >
               <tr><th><h3>Quick Links</h3></th></tr>
-              <tr><td><a href="nosotrosl.html" className="enlacefooter" style={{textDecoration:"none"}}>Acerca de nosotros</a></td></tr>
-              <tr><td><a href="politicas.html" className="enlacefooter" style={{textDecoration:"none"}}>politicas de privacidad</a></td></tr>
-              <tr><td><a href="politicas.html" className="enlacefooter" style={{textDecoration:"none"}}>Contactanos</a></td></tr>
+              <tr><td><Link to="/About" className="enlacefooter" style={{textDecoration:"none"}}>Hacerca de nosotros</Link></td></tr>
+              <tr><td><Link to="/Policies" className="enlacefooter" style={{textDecoration:"none"}}>Politicas de privacidad</Link></td></tr>
+              <tr><td><Link to="/Contact" className="enlacefooter" style={{textDecoration:"none"}}>Contactanos</Link></td></tr>
           </table>   
         </div>
   
         <div className="columna3">
-          <table >
-            <tr><th><h3>Services</h3></th></tr>
-            <tr><td><a href="servicios.html" className="enlacefooter" style={{textDecoration:"none"}}>Vitaminas</a></td></tr>
-            <tr><td><a href="servicios.html" className="enlacefooter" style={{textDecoration:"none"}}>Todos los servicios</a></td></tr>
-            <tr><td><a href="servicios.html" className="enlacefooter" style={{textDecoration:"none"}}>Tratamientos</a></td></tr>
-          </table> 
+            <table >
+                <tr><th><h3>Services</h3></th></tr>
+                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Vitaminas</Link></td></tr>
+                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Todos los servicios</Link></td></tr>
+                <tr><td><Link to="/services" className="enlacefooter" style={{textDecoration:"none"}}>Tratamientos</Link></td></tr>
+            </table> 
         </div>
   
         <div className="columna4">

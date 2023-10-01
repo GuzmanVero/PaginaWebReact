@@ -10,7 +10,11 @@
     display: flex;
     justify-content: center;
     height: auto;
-    margin: 0 235px; 
+    margin: 0 500px; 
+    background-color: white;
+}
+.reu{
+    margin: 0 20px;
 }
 .mobile{
     margin: 0 05px;
