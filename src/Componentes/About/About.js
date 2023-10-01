@@ -1,9 +1,7 @@
 import React from 'react';
 
 import reu from './Images/reunion.jpg'
-import './CSS/nosotros.css'
-
-import { Link } from 'react-router-dom';
+import './Nosotros.css'
 
 function About() {
   return(
