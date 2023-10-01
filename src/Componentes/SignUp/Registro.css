@@ -1,0 +1,37 @@
+.tituloregistro{
+    margin: auto;
+    font-size: 30px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+.imagen1{ 
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    margin-left: auto;   
+}
+.conForm{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    margin: 0 435px; 
+    padding: 15;
+}
+.input{
+    width: 300px;
+    height: 20px;
+    font-size: 16px; 
+    padding: 10px;
+} 
+.formularioR{
+    margin: auto 40px;
+    text-align: center;
+}
+.btinicio:link{
+    color: black;
+}
+.btinicio:visited{
+    color: black;
+}
