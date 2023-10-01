@@ -1,7 +1,12 @@
 import React from 'react';
 
 function SingUp() {
-  return <div>regitro Page</div>;
+  return(
+    <React.Fragment>
+      
+      {/**/}
+  </React.Fragment>
+  );
 }
 
 export default SingUp;

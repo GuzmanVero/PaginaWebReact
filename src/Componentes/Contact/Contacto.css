@@ -1,16 +1,17 @@
-.titulo{
+.tituloContacto{
     background-color: rgb(49, 125, 125);
     color: rgb(237, 248, 248);
     margin: auto;
     font-size: 30px;
-    width: 100% ;
+    width: auto;
     height: 100px;
+    text-align: center;
 }
-.contenedor0{
+.conBodyContacto{
     display: flex;
     justify-content: center;
     height: auto;
-    margin: 0 500px; 
+    margin: 0 200px; 
 }
 .reu{
     margin: 0 2sspx;
@@ -18,27 +19,39 @@
 .mobile{
     margin: 0 05px;
 }
-.texto{
-    margin: 0 05px;
+.textoc{
+    margin: 0 10px;
+    font-size: 0px;
 }
-.texto1{
-text-align: center;
+.textboduC{
+    text-align: center;
+    font-size: 30px;
 }
 .sing{
     margin: 0 05px;
 }
-.contenedor1{
+.conFormulario{
     background-color: aliceblue;
     display: flex;
     justify-content: center;
-    height: 450px;
+    height: 600px;
     margin: 0 235px; 
     padding: 25;
 }
 .formulario{
     margin: auto 50px;
     text-align: center;
+    font-size: 25px;
+}
+.inputG{
+    width: 300px;
+    height: 20px;
+    font-size: 16px; 
+    padding: 10px;
 }
 .contacto{
     margin: auto 15px;
+}
+.mapa{
+    width: 1830px;
 }
