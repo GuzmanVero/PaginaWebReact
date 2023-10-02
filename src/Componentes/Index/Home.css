@@ -1,9 +1,10 @@
 .titulohome{
     color: rgb(31, 106, 106);
     margin: auto;
-    font-size: 60px;
+    font-size: 150px;
     width: 700px ;
     height: auto;
+    text-align: center;
 }
 .verifica{
     background-color: rgb(49, 125, 125);
@@ -18,6 +19,11 @@
     background-color: aquamarine;
     width:100px; 
     height:25px
+}
+.btnregistro{
+    text-decoration: none;
+    color: #000;
+    
 }
 .bningresar:link{
     color: black;

@@ -7,7 +7,7 @@ import medicamento from './Images/medicamto1.jpg';
 import gato from './Images/gato-.jpg';
 import reu from './Images/reunion.jpg';
 import './Home.css';
-
+import { Link } from 'react-router-dom';
 
 function Home(){
     return(
@@ -26,11 +26,7 @@ function ComTitleVer(){
   return(
     <div>
     <section>
-      <table  className="titulohome">
-        <tr>
-          <th><h1>ANIMALS CLINIC</h1></th>
-        </tr>
-      </table>
+      <h1 className="titulohome">ANIMALS CLINIC</h1>
 
       <div className="verifica">
         <div >            
@@ -46,21 +42,23 @@ function ComTitleVer(){
                 ¿Quieres agendar una cita en línea?<br/>
                 ¡Solo regístrate!</p>
                 <br/><br/><br/>
-                <button className="btingresar" disabled={true}><a href="Registro.html" style={{textDecoration: 'none'}}>Registrar</a></button>
+                <button className="btingresar" disabled={true}>
+                <Link to="/SignUp" className="btnregistro" style={{textDecoration:"none"}}>Registro</Link>
+                </button>
               </th>
             </tr>
           </table>
         </div>
       </div>
     </section>
-    
   </div>
   );
 }
 
 function ComService(){
   return(
-    <section>           
+    <section>  
+      <br/>         
       <div className="imagen2"> 
         <table className="fooder1" >
           <tr>
@@ -79,8 +77,7 @@ function ComService(){
             </td>
           </tr>
         </table>
-      </div>
-      
+      </div>     
     </section>
   );
 }
