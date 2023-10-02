@@ -1,1 +1,22 @@
+.connosotros{
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    margin: 20px auto;  /* Centrar el div horizontalmente */
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    width: 70%;  /* Definir una anchura específica, puedes ajustar este valor */
+    text-align: justify;  /* Justificar el texto */
+}
+.h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;  /* Alinear el título a la izquierda */
+}
+.Conp{
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #333;
+}
+
 

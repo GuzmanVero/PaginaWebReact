@@ -1,20 +1,27 @@
-.imagen1{ 
-    align-items: center;
-    padding: 10px;
+.titulologin{
+    margin: auto;
+    font-size: 30px;
+    width: auto;
     height: 100px;
-    margin-left: auto;   
+    text-align: center;
 }
-.contenedor1{
+.conFormlogin{
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     height: 450px;
-    margin: 0 235px; 
+    margin: 0 435px; 
     padding: 25;
 }
-.formulario{
+.formulariologin{
     margin: auto 50px;
     text-align: center;
+}
+.login{
+    width: 300px;
+    height: 20px;
+    font-size: 16px; 
+    padding: 10px;
 }
 .bnregistro:link{
     color: black;

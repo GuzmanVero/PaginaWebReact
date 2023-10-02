@@ -1,6 +1,6 @@
 import React from 'react';
 import './Registro.css'
-
+import { Link } from 'react-router-dom';
 
 function SingUp() {
   return(
@@ -43,9 +43,11 @@ function ComFormularioRegistro(){
                   <label htmlFor="passwordconfirm">Confirmar contraseña: </label><br /><br />
                   <input type="password" id="passwordconfirm" name="passwordconfirm" className="input" /><br /><br />
                   logo faces y google<br /><br />
-                  <input type="submit" /*onClick={registrase}*/ value="Registrar" />
                   <button>
-                      <a href="iniciarsesion.html" className="btinicio" style={{ textDecoration: 'none' }}>iniciar sesion</a>
+                  {/*<Link to="/Registro" className="enlaceRe" style={{textDecoration:"none"}}>Registro</Link>*/}
+                  </button>
+                  <button>
+                  <Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Iniciar sesion</Link>
                   </button>
                 </form>
               </td>
@@ -54,6 +56,7 @@ function ComFormularioRegistro(){
         </table>
       </div>
     </div>
+    <br/><br/><br/>
   </section>
   );
 }
