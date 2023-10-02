@@ -9,6 +9,8 @@ import Login from './Componentes/Login/Login';
 import Policies from './Componentes/Policies/Policies';
 import Header from './Componentes/Header/Header'
 import Footer from './Componentes/Footer/Footer';
+import Citas from './Componentes/Citas/Citas';
+import Cuenta from './Componentes/Cuenta/Cuenta';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Policies" element={<Policies />} />
+          <Route path='/Citas' element={<Citas/>} />
+          <Route path='/Cuenta' element={<Cuenta/>} />
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer/>

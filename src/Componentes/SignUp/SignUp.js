@@ -30,24 +30,51 @@ function ComFormularioRegistro(){
             <tr>
               <td>
                 <form action="">
-                  <label htmlFor="nameuser">Nombre de usuario: </label><br /><br />
-                  <input type="text" id="nameuser" name="nameuser" className="input" /><br /><br />
-                  <label htmlFor="name">Nombre: </label><br /><br />
-                  <input type="text" id="name" name="name" className="input" /><br /><br />
-                  <label htmlFor="lastname">Apellido: </label><br /><br />
-                  <input type="text" id="lastname" name="lastname" className="input" /><br /><br />
-                  <label htmlFor="address">Direccion de correo electronico: </label><br /><br />
-                  <input type="email" id="address" name="address" className="input"  /><br /><br />
+                  <label htmlFor="nameuser">Nombre de usuario: </label><br/><br/>
+                  <input 
+                    type="text" 
+                    id="nameuser" 
+                    name="nameuser" 
+                    className="input" /><br/><br/>
+
+                  <label htmlFor="name">Nombre: </label><br/><br/>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    className="input" /><br/><br/>
+
+                  <label htmlFor="lastname">Apellido: </label><br/><br/>
+                  <input 
+                    type="text"
+                    id="lastname" 
+                    name="lastname" 
+                    className="input" /><br/><br/>
+
+                  <label htmlFor="address">Direccion de correo electronico: </label><br/><br/>
+                  <input 
+                    type="email"
+                    id="address" 
+                    name="address" 
+                    className="input"  /><br/><br/>
+
                   <label htmlFor="password">Contraseña: </label><br /><br />
-                  <input type="password" id="password" name="password" className="input" /><br /><br />
+                  <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    className="input" /><br /><br />
+
                   <label htmlFor="passwordconfirm">Confirmar contraseña: </label><br /><br />
                   <input type="password" id="passwordconfirm" name="passwordconfirm" className="input" /><br /><br />
+
                   logo faces y google<br /><br />
+                  
                   <button>
-                  {/*<Link to="/Registro" className="enlaceRe" style={{textDecoration:"none"}}>Registro</Link>*/}
+                  <Link to="/Cuenta" className="enlacebn" style={{textDecoration:"none"}}>Registro</Link>
                   </button>
                   <button>
-                  <Link to="/Login" className="enlacefooter" style={{textDecoration:"none"}}>Iniciar sesion</Link>
+                  <Link to="/Login" className="enlacebn" style={{textDecoration:"none"}}>Iniciar sesion</Link>
                   </button>
                 </form>
               </td>

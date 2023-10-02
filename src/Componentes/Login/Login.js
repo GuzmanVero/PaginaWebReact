@@ -31,13 +31,29 @@ function ComFormularioLogin(){
               <td>
                 <form action="">
                   <label htmlFor="nameuser">Nombre de usuario o correo electronico </label><br /><br />
-                  <input type="text" id="nameuser" name="nameuser" className='login'/><br /><br />
-                  <label htmlFor="password">Contraseña </label><br /><br />
-                  <input type="password" id="password" name="password" className='login' /><br /><br />
-                  logo faces y google <br /> <br />
-                  <input type="submit" /*onClick={iniciosesion}*/ value="Iniciar sesion" />
+                  <input 
+                    type="text" 
+                    id="nameuser" 
+                    name="nameuser"
+                    className='login'/><br/><br/>
+                    
+                  <label htmlFor="password">Contraseña </label><br/><br/>
+                  <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    className='login' /><br/><br/>
+
+                  logo faces y google <br/> <br/>
                   <button>
-                  <Link to="/SignUp" className="enlacefooter" style={{textDecoration:"none"}}>Registro</Link>
+                  <Link to="/Cuenta" 
+                  className="enlacebn" 
+                  style={{textDecoration:"none"}}>Iniciar sesion</Link>
+                  </button>
+                  <button>
+                  <Link to="/SignUp" 
+                  className="enlacebn" 
+                  style={{textDecoration:"none"}}>Registro</Link>
                   </button>
                 </form>
               </td>
