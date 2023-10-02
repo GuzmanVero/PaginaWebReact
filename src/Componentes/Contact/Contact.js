@@ -1,13 +1,48 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contacto.css';
 import mobil from './undraw_Mobile_search_jxq5.png';
-import sing from './undraw_Sign_up_n6im.png'
+import sing from './undraw_Sign_up_n6im.png';
+import emailjs from '@emailjs/browser';
+
+const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_kx61cyu', 'template_e0eg1fr', form.current, 'LyE4aLgOsMCXfH2To')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  return(
+    <div className="conFormulario">
+    <div className="formulario">
+      <form action=""  ref={form} onSubmit={sendEmail}>
+        <label htmlFor="name">Nombre: </label><br />
+        <input type="text" placeholder="Nombre completo" id="name" name="user_name" className="inputG"/><br/><br/>
+        <label htmlFor="address">Correo electronico: </label><br />
+        <input type="email" placeholder="Correo electronico" id="address" name="user_email" className="inputG"/><br/><br/>
+        <label htmlFor="telefono">Teléfono: </label><br />
+        <input type="text" placeholder="Telefono" id="number" name="user_celphone" className="inputG"/><br/><br/>
+        <label htmlFor="name">Mensaje: </label><br />
+        <textarea type="text" placeholder="Mensaje" id="message" name="message" className="inputG"/><br/><br/>
+        <input type="submit" value="Enviar mensaje" />
+        {/*<input type="submit" onClick={mensajeEnviado} value="Enviar mensaje"/>*/}
+      </form>            
+    </div>
+  </div>
+  );
+}
 
 function Contact() {
   return (
     <React.Fragment>
       <ComTitleContact/>
       <ComBodyContact/>
+      <ContactUs/>
       <ComFormularioContact/>
       <ComMapa/>
       {/**/}
@@ -55,28 +90,6 @@ function ComBodyContact(){
 function ComFormularioContact(){
   return(
     <div className="conFormulario">
-    <div className="formulario">
-      <table  height="400" width="400" >  
-        <tbody>
-          <tr>
-            <td>
-              <form action="">
-                <label htmlFor="name">Nombre: </label><br />
-                <input type="text" placeholder="Nombre completo" id="name" name="name" className="inputG"/><br/><br/>
-                <label htmlFor="address">Correo electronico: </label><br />
-                <input type="email" placeholder="Correo electronico" id="address" name="address" className="inputG"/><br/><br/>
-                <label htmlFor="telefono">Teléfono: </label><br />
-                <input type="text" placeholder="Telefono" id="number" name="number" className="inputG"/><br/><br/>
-                <label htmlFor="name">Mensaje: </label><br />
-                <input type="text" placeholder="Mensaje" id="message" name="message" className="inputG"/><br/><br/>
-                <input type="submit" /*onClick={mensajeEnviado}*/ value="Enviar mensaje"/>
-              </form>
-            </td>
-          </tr>                
-        </tbody>
-      </table>              
-    </div>
-
     <div className="contacto">
         <table >
             <tbody>
@@ -100,7 +113,7 @@ function ComFormularioContact(){
             </tbody>
         </table>
     </div>
-  </div>
+    </div>
   );
 }
     
