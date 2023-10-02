@@ -1,6 +1,6 @@
 import React from 'react';
 
-import reu from './reunion.jpg'
+import reu from './OPERATORIOS_CIRUGIA.jpg'
 import perrodibujo from './undraw_Good_doggy_re_eet7.png'
 import './Nosotros.css'
 
@@ -35,7 +35,7 @@ function ComTitleAbout(){
                         <td style={{paddingTop: '20px', paddingBottom: '20px'}} colSpan={2}></td>
                     </tr>
                     <tr>
-                        <th><img width="350" height="250" className='reu' src={reu} alt="imagenveterinaria" /></th>
+                        <th><img width="450" height="250" className='reu' src={reu} alt="imagenveterinaria" /></th>
                         <td>
                             <h3><font color="blue">Estamos</font></h3>
                             <h2><strong>Comprometidas con la excelencia</strong></h2>
