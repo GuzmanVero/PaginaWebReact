@@ -1,39 +1,77 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Cuenta.css';
+import { Link } from 'react-router-dom';
 
-const Cuenta = () => {
-  return (
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <div className="card">
-            <div className="card-header">Account Details</div>
-            <div className="card-body">
-              <form>
-                <div className="form-group">
-                  <label htmlFor="email">Email address</label>
+function Cuenta(){
+  return(
+    <React.Fragment>
+       <ComTitleCuenta/>
+       <ComBodyCuenta/>
+    </React.Fragment>
+  );
+}
+
+function ComTitleCuenta(){
+  return(
+    <section className="titulocuenta">
+      <h1>Cuenta</h1>
+    </section>
+  );
+}
+
+function ComBodyCuenta(){
+  return(
+    <section>
+    <div className="conCuenta">
+      <div className="formularioR">
+        <table style={{ height: '300px', width: '300px' }}>
+          <tbody>
+            <tr>
+              <td>
+                <form action="">
+                  <label htmlFor="nameuser">Nombre de usuario: </label><br/><br/>
                   <input 
-                    type="email" 
-                    className="form-control" 
-                    id="email" aria-describedby="emailHelp" 
-                    placeholder="Enter email" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                    type="text" 
+                    id="nameuser" 
+                    name="nameuser" 
+                    className="inputC" /><br/><br/>
+
+                  <label htmlFor="name">Nombre: </label><br/><br/>
                   <input 
-                    type="password" 
-                    className="form-control" 
-                    id="password" 
-                    placeholder="Password" />
-                </div>
-                <button type="submit" className="btn btn-primary">Update</button>
-              </form>
-            </div>
-          </div>
-        </div>
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    className="inputC" /><br/><br/>
+
+                  <label htmlFor="lastname">Apellido: </label><br/><br/>
+                  <input 
+                    type="text"
+                    id="lastname" 
+                    name="lastname" 
+                    className="inputC" /><br/><br/>
+
+                  <label htmlFor="address">Direccion de correo electronico: </label><br/><br/>
+                  <input 
+                    type="email"
+                    id="address" 
+                    name="address" 
+                    className="inputC"/><br/><br/>
+
+                  
+                  <button>
+                  <Link to="/Citas" className="enlacebn" style={{textDecoration:"none"}}>Agendar cita</Link>
+                  </button>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+    <br/><br/><br/>
+  </section>
   );
-};
+}
 
 export default Cuenta;

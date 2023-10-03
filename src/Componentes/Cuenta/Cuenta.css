@@ -1,0 +1,22 @@
+.titulocuenta{
+    margin: auto;
+    font-size: 30px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+.conCuenta{
+    background-color: aliceblue;
+    display: flex;
+    justify-content:right;
+    height: 550px;
+    margin: 0 400px; 
+    padding: 15;
+    text-align: left;
+}
+.inputC{
+    width: 8cm;
+    height: 35px;
+    font-size: 16px; 
+    padding: 10px;
+}

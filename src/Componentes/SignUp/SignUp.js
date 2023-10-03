@@ -71,7 +71,7 @@ function ComFormularioRegistro(){
                   logo faces y google<br /><br />
                   
                   <button>
-                  <Link to="/Cuenta" className="enlacebn" style={{textDecoration:"none"}}>Registro</Link>
+                  <Link to="/Citas" className="enlacebn" style={{textDecoration:"none"}}>Registro</Link>
                   </button>
                   <button>
                   <Link to="/Login" className="enlacebn" style={{textDecoration:"none"}}>Iniciar sesion</Link>
