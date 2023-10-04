@@ -2,6 +2,7 @@ import React from 'react';
 import logoC from './cropped-tweb.png';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Header() {
     return (
@@ -19,7 +20,7 @@ function Header() {
             <td><Link to="/Services" className="enlaceheader" style={{textDecoration:"none"}}>Servicios</Link></td>
             <td><Link to="/Contact" className="enlaceheader" style={{textDecoration:"none"}}>Contacto</Link></td>
             <td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>
-            <td><Link to="/Login" className="enlaceheader" style={{textDecoration:"none"}}>Inicio sesion</Link></td>
+            <td><LoginButton/></td>
           </tr>
         </table>           
       </div>   
@@ -27,5 +28,11 @@ function Header() {
     </header>
   );
 }
+export const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <imput onClick={() => loginWithRedirect()}>Iniciar sesion</imput>
+
+};
 
 export default Header;

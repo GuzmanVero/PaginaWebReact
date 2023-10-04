@@ -2,12 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Cuenta.css';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Cuenta(){
   return(
     <React.Fragment>
        <ComTitleCuenta/>
        <ComBodyCuenta/>
+       <ComLogout/>
     </React.Fragment>
   );
 }
@@ -19,6 +21,16 @@ function ComTitleCuenta(){
     </section>
   );
 }
+
+function ComLogout(){
+  return(
+    <section className="cerrar">
+      <vid className=''>
+      <Logout/>
+    </vid>
+    </section>
+  );
+} 
 
 function ComBodyCuenta(){
   return(
@@ -67,11 +79,18 @@ function ComBodyCuenta(){
             </tr>
           </tbody>
         </table>
+        <br/>
       </div>
     </div>
     <br/><br/><br/>
   </section>
   );
+}
+
+export const Logout = () => {
+  const {logout } = useAuth0();
+  
+  return <button onClick={() => logout()}>Cerrar sesion</button>
 }
 
 export default Cuenta;

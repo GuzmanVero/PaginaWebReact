@@ -1,6 +1,9 @@
 import React from 'react';
 import './Registro.css'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { useState, useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function SingUp() {
   return(
@@ -20,7 +23,38 @@ function ComTitleRegistro(){
   );
 }
 
+export const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <button onClick={() => loginWithRedirect()}>Iniciar sesion</button>
+
+};
+
 function ComFormularioRegistro(){
+  const [nameuser, setNameuser] = useState('');
+  const [name, setName] = useState('');
+  const [lastname, setLastname] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const user = JSON.parse(localStorage.getItem('user'));
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (nameuser && name && lastname && email && password) {
+      setIsButtonDisabled(false);
+    } else {
+      setIsButtonDisabled(true);
+    }
+  }, [nameuser, name, lastname, email, password]);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const userData = { nameuser, name, lastname, email, password };
+    localStorage.setItem('user', JSON.stringify(userData));
+  }
+
   return(
     <section>
     <div className="conForm">
@@ -64,18 +98,18 @@ function ComFormularioRegistro(){
                     id="password" 
                     name="password" 
                     className="input" /><br /><br />
-
-                  <label htmlFor="passwordconfirm">Confirmar contraseña: </label><br /><br />
-                  <input type="password" id="passwordconfirm" name="passwordconfirm" className="input" /><br /><br />
-
+                  
                   logo faces y google<br /><br />
                   
-                  <button>
-                  <Link to="/Citas" className="enlacebn" style={{textDecoration:"none"}}>Registro</Link>
-                  </button>
-                  <button>
-                  <Link to="/Login" className="enlacebn" style={{textDecoration:"none"}}>Iniciar sesion</Link>
-                  </button>
+                  <input 
+                    type="button" 
+                    value="Registro" 
+                    disabled={isButtonDisabled} 
+                    onClick={() => {
+                        if (isButtonDisabled) {
+                            navigate('/Citas');}}} />
+
+                  <LoginButton/>
                 </form>
               </td>
             </tr>

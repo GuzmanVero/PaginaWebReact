@@ -1,6 +1,7 @@
 import React from 'react';
 import './Iniciarsesion.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   return (
@@ -20,7 +21,10 @@ function ComTitleLogin(){
   );
 }
 
+
+
 function ComFormularioLogin(){
+  const navigate = useNavigate();
   return(
     <section>
     <div className="conFormlogin">
@@ -45,16 +49,18 @@ function ComFormularioLogin(){
                     className='login' /><br/><br/>
 
                   logo faces y google <br/> <br/>
-                  <button>
-                  <Link to="/Cuenta" 
-                  className="enlacebn" 
-                  style={{textDecoration:"none"}}>Iniciar sesion</Link>
-                  </button>
-                  <button>
-                  <Link to="/SignUp" 
-                  className="enlacebn" 
-                  style={{textDecoration:"none"}}>Registro</Link>
-                  </button>
+                  <input 
+                      type="button" 
+                      value="Iniciar sesion" 
+                      onClick={() => navigate('/Citas')} 
+                      className="enlacebn" 
+                      style={{textDecoration:"none"}}/>
+                  <input 
+                      type="button" 
+                      value="Registro" 
+                      onClick={() => navigate('/SignUp')} 
+                      className="enlacebn" 
+                      style={{textDecoration:"none"}}/>
                 </form>
               </td>
             </tr>
