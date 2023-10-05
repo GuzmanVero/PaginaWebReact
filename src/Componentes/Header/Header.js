@@ -19,7 +19,8 @@ function Header() {
             <td><Link to="/About" className="enlaceheader" style={{textDecoration:"none"}}>Nosotros</Link></td>
             <td><Link to="/Services" className="enlaceheader" style={{textDecoration:"none"}}>Servicios</Link></td>
             <td><Link to="/Contact" className="enlaceheader" style={{textDecoration:"none"}}>Contacto</Link></td>
-            <td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>
+            {/*<td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>*/}
+            <td><SigupButton/></td>
             <td><LoginButton/></td>
           </tr>
         </table>           
@@ -28,11 +29,24 @@ function Header() {
     </header>
   );
 }
+
+export const SigupButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return (
+    <button className='btnlogin' onClick={() => loginWithRedirect({ redirectUri: window.location.origin + '/Citas' })}>
+      Registro
+    </button>
+  );
+};
 export const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <imput onClick={() => loginWithRedirect()}>Iniciar sesion</imput>
-
+  return (
+    <button className='btnlogin' onClick={() => loginWithRedirect({ redirectUri: window.location.origin + '/Citas' })}>
+      Iniciar sesion
+    </button>
+  );
 };
 
 export default Header;

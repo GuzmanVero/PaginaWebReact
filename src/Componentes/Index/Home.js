@@ -8,6 +8,7 @@ import gato from './Images/gato-.jpg';
 import reu from './Images/reunion.jpg';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Home(){
     return(
@@ -42,9 +43,12 @@ function ComTitleVer(){
                 ¿Quieres agendar una cita en línea?<br/>
                 ¡Solo regístrate!</p>
                 <br/><br/><br/>
-                <button className="btingresar" disabled={true}>
-                <Link to="/SignUp" className="btnregistro" style={{textDecoration:"none"}}>Registro</Link>
-                </button>
+                <SigupButton/>
+                {/*<button className="btingresar" disabled={true} >
+                Registro
+                <Link to="/SignUp" className="btnregistro" 
+                style={{textDecoration:"none"}}>Registro</Link>
+                </button>*/}
               </th>
             </tr>
           </table>
@@ -54,7 +58,15 @@ function ComTitleVer(){
   </div>
   );
 }
+export const SigupButton = () => {
+  const { loginWithRedirect } = useAuth0();
 
+  return (
+    <button className='btnlogin' onClick={() => loginWithRedirect({ redirectUri: window.location.origin + '/Citas' })}>
+      Registro
+    </button>
+  );
+};
 function ComService(){
   return(
     <section>  
@@ -143,7 +155,7 @@ function ComTitleLic(){
                 <h1>Licenciatura en Médico Veterinario y Zootecnista</h1>
                 <p>Los médicos veterinarios zootecnistas, son los profesionistas encargados 
                     de mantener la salud, así como de atender, prevenir y controlar las enfermedades de los animales.</p>
-                <button className="btingresar" disabled={true}><a href="nosotrosl.html" style={{textDecoration:'none'}}>Conócenos</a></button>
+                <td><Link to="/About" className="enlaceheader" style={{textDecoration:"none"}}>Nosotros</Link></td>
               </th>
               <th>
                 <img width="510" height="350" className='reu' src={reu} alt="imagenveterinaria" />
