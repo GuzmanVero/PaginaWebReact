@@ -26,8 +26,11 @@ function ComTitleRegistro(){
 export const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button onClick={() => loginWithRedirect()}>Iniciar sesion</button>
-
+  return (
+    <button onClick={() => loginWithRedirect({ redirectUri: window.location.origin + '/Citas' })}>
+      Iniciar sesion
+    </button>
+  );
 };
 
 function ComFormularioRegistro(){
