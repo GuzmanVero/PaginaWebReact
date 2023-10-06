@@ -21,8 +21,10 @@ function ComTitleAbout(){
         <section>
     <table className="titulo">
         <tbody>
-            <tr>
-                <th><h1>Acerca de Nosotros</h1></th>
+            <tr> 
+                <center>
+                  <th><h1>Acerca de Nosotros</h1></th>
+                </center>
             </tr>
         </tbody>
     </table>
@@ -132,18 +134,23 @@ function ComInfoLocal(){
     <table className="coninfo">
     <tbody>
         <tr>
+            
             <th>
+                <center>
                 <p>Teléfono</p>
                 <p>+503 7037-0932</p>
+                </center>
             </th>
             <th>
+                <center>
                 <p>123 Fifth Ave, New York,</p>
                 <p>NY 12004, USA</p>
+                </center>
             </th>
             <th>
                 <p>Realiza tu cita en línea</p>
             </th>
-        </tr>
+        </tr> 
     </tbody>
     </table>
 

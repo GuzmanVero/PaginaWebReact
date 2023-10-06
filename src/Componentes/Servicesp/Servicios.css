@@ -52,28 +52,30 @@
 }
 .cuadro{
     background-color: rgb(50, 150, 150);
-    padding: 75px;
+    padding: 50px;
     margin: auto;
     width: 700px;
     height: 300px;
+    
 }       
 .cuadrofalto{
     background-color: rgb(249, 245, 241);
     font-size: 30px;
     font-weight: bold;
+    width: 600px;
+    height: 300px;
 }
 .cuadrotigre{
     background-color: rgb(237, 244, 244);
-    padding: 75px;
+    padding: 30px;
     margin: auto;
     width: auto;
-    height: auto;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    
 }       
 .tigre{
-    height: 550px;
+    flex-direction: column;
+    height: 450px;
     width: 850px;
     margin: 0 auto;
 }

@@ -219,24 +219,8 @@ function ComCuadroFalto(){
 
 function ComCuadroTrigre(){
   return(
-    <div className="cuadrotigre">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <br>
-                        </br>
-                    </td>
-                   
-                </tr>
-                <tr>
-                    <td>
-                    <img className='tigre' src={tigre} alt=""/>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-      
+    <div className="cuadrotigre"> 
+       <img className='tigre' src={tigre} alt=""/>    
     </div>
   );
 }
