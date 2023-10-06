@@ -231,7 +231,7 @@ function ComCuadroTrigre(){
                 </tr>
                 <tr>
                     <td>
-                      <img className='tigre' src={tigre} alt=""/>
+                    <img className='tigre' src={tigre} alt=""/>
                     </td>
                 </tr>
             </tbody>
