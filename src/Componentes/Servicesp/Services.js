@@ -34,7 +34,9 @@ function ComTitleServices(){
         <tbody>
             <tr>
                 <th>
+                    <center>
                     <h1>Servicios</h1>
+                    </center>
                 </th>
             </tr>           
         </tbody>
@@ -218,7 +220,23 @@ function ComCuadroFalto(){
 function ComCuadroTrigre(){
   return(
     <div className="cuadrotigre">
-      <img className='tigre' src={tigre} alt=""/>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <br>
+                        </br>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                      <img className='tigre' src={tigre} alt=""/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      
     </div>
   );
 }
