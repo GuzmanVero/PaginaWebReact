@@ -10,7 +10,7 @@ function Citas() {
       <div>
         <div>
         <React.Fragment>
-          <ComTitleCitas/>
+          <ComTitleCitas/><br/>
           <Container>
           <Box sx={{ bgcolor: '#cfe8fc'}} style={{padding:"30px 30px 30px 30px"}}>
           <ComFormStepper/>
@@ -29,7 +29,7 @@ function Citas() {
 function ComTitleCitas(){
     return(
       <section className="titulocitas">
-        <h1>Agenda tu cita aquí</h1>
+       <br/> <h1>Agenda tu cita aquí</h1>
         <br/><br/><br/>
       </section>
     );
