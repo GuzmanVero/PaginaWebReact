@@ -1,4 +1,4 @@
-header{
+.nav{
     display: flex;
     background-color: #45A29e;
     height: 130px;
@@ -21,6 +21,9 @@ header{
     margin-left: auto;
 }
 .enlaceheader:link{
+    background-color: #1f2833;
+    padding: 5px 10px;
+    border: none;
     color: white;
 }
 .enlaceheader:visited{
@@ -29,7 +32,53 @@ header{
 .enlaceheader:hover{
     font-size: 1.5em;
 }
+.buttonnab{
+    background-color: #1f2833;
+}
 .btnlogin{
     background-color: #1f2833;
     color: white;
+}
+.nav_toggle{
+    display: none;
+}
+
+@media (max-width:890px){
+    .menuheader{
+        position: absolute;
+        top: 115px;
+        left: 0;
+        background: #45A29e;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;
+        transition: 0.3s ease all;
+    }
+    .nav_toggle.open{
+        transform: translateX(0) !important;
+    }
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .nav_toggle spam{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .nav_toggle.open > span{
+        transform: rotate(45deg) translate(0px 0px);
+    }
+    .nav_toggle.open > span:nth-child(2){
+        display: none;
+    }
+    .nav_toggle.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
 }
