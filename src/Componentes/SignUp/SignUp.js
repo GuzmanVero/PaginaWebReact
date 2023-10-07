@@ -22,6 +22,16 @@ function ComTitleRegistro(){
     </section>
   );
 }
+export const SigupButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return (
+    <button className='btnlogin' onClick={() => loginWithRedirect({ redirectUri: window.location.origin + '/Citas' })}>
+      Registro
+    </button>
+  );
+};
+
 
 export const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();

@@ -3,6 +3,7 @@ import './Contacto.css';
 import mobil from './undraw_Mobile_search_jxq5.png';
 import sing from './undraw_Sign_up_n6im.png';
 import emailjs from '@emailjs/browser';
+import whats from './what.png';
 
 function Contact() {
   return (
@@ -38,11 +39,17 @@ function ComBodyContact(){
                 <tr>
                     <td>
                         <p className="textboduC"><strong>En caso de una emergencia </strong></p>
-                        <p className="textboduC">Contactanos a nuestro numero de Whatsapp.
-                        Si no puedes comunicarte puedes llegar a la veterinaria
+                        <p className="textboduC">Contactanos a nuestro numero de Whatsapp.</p>
+                        <tr><td>
+                  <a href="https://web.whatsapp.com/">
+                  <img className='whats' src={whats} alt=""/> 
+                  </a>
+                  
+                  </td></tr>
+                       <p className="textboduC"> Si no puedes comunicarte puedes llegar a la veterinaria
                         O a tu veterinaria mas cercana.</p>
                     </td>
-                </tr>
+                    </tr>
             </tbody>
         </table>
     </div>
@@ -81,6 +88,7 @@ const ContactUs = () => {
         <label htmlFor="name">Mensaje: </label><br />
         <textarea type="text" placeholder="Mensaje" id="message" name="message" className="inputG"/><br/><br/>
         <input type="submit" value="Enviar mensaje" />
+        
       </form>            
     </div>
   </div>

@@ -22,7 +22,7 @@ function Header() {
             {/*<td><Link to="/SignUp" className="enlaceheader" style={{textDecoration:"none"}}>Registro</Link></td>*/}
             <td><SigupButton/></td>
             <td><LoginButton/></td>
-          </tr>
+            </tr>
         </table>           
       </div>   
        

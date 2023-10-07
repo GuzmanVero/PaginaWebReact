@@ -35,3 +35,8 @@
 .enlacefooter:hover{
     color: blue;
 }
+.face{
+    height:35px;
+    width: 35px;
+    margin: 0 auto;
+}

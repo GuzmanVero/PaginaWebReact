@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-
+import face from './f.png';
 function Footer(){
     return(
       <footer className="footer" style={{border: "1px solid"}}>
@@ -14,7 +14,11 @@ function Footer(){
                         <p>Contamos con alta experiencia en la salud de los animales.</p>
                     </th>
                 </tr>
-                <tr><td>logoface</td></tr>
+                <tr><td>
+                  <a href="https://www.facebook.com/profile.php?id=100095316981528">
+                  <img className='face' src={face} alt=""/> 
+                  </a>
+                   </td></tr>
             </table>
         </div>
   
