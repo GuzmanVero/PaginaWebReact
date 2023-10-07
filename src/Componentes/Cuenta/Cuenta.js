@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Cuenta.css';
 import { useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-
+import './Perfiles'
+import ComCambio from './Perfiles';
 function Cuenta(){
   return(
     <React.Fragment>
        <ComTitleCuenta/>
-
        <ComBodyCuenta/>
+       <ComCambio/>
        <ComLogout/>
     </React.Fragment>
   );
