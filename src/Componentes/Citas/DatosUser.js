@@ -20,7 +20,7 @@ export default function ComFormUser() {
           id="outlined-required"
           label="Nombre Required"
           defaultValue=""
-        />
+        /><br/>
         <TextField
           required
           id="outlined-required"
@@ -34,18 +34,24 @@ export default function ComFormUser() {
           InputLabelProps={{
             shrink: true,
           }}
-        />
+        /><br/>
         <TextField
           required
           id="outlined-required"
           label="Dirreccion Required"
           defaultValue=""
-        />
+        /><br/>
        <TextField
           id="outlined-required"
           label="Correo Electronico"
           defaultValue=""
-        />   <br/><br/> 
+        />  <br/>
+        <TextField
+          error
+          id="outlined-error"
+          label="Error"
+          defaultValue=""
+        /> <br/><br/> 
       </div>
     </Box>
   );

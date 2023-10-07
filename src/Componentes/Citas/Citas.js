@@ -7,15 +7,22 @@ import Container from '@mui/material/Container';
 
 function Citas() {
     return(
-      <React.Fragment>
-        <ComTitleCitas/>
-        <Container>
-        <Box sx={{ bgcolor: '#cfe8fc'}} style={{padding:"30px 30px 30px 30px"}}>
-        <ComFormStepper/>
-        </Box>
-        </Container><br/><br/>
-        <ComCuenta/>
-      </React.Fragment>
+      <div>
+        <div>
+        <React.Fragment>
+          <ComTitleCitas/>
+          <Container>
+          <Box sx={{ bgcolor: '#cfe8fc'}} style={{padding:"30px 30px 30px 30px"}}>
+          <ComFormStepper/>
+          </Box>
+          </Container><br/><br/>
+          
+        </React.Fragment>
+        </div>
+        <div className='btn'>
+          <ComCuenta/>
+        </div>
+      </div>
     );
 }
 
@@ -36,7 +43,7 @@ function ComTitleCitas(){
     };
   
     return (
-      <button onClick={handleButtonClick}>
+      <button onClick={handleButtonClick} className='btnCuenta'>
         Cuenta
       </button>
     );

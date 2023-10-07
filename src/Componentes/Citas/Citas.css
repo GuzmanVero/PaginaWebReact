@@ -11,3 +11,16 @@
 .FormPet{
     text-align: center;
 }
+.datepet{
+    text-align: center;
+}
+.fechacita{
+    text-align: center;
+}
+.btnCuenta{
+    margin: auto;
+    font-size: 20px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+}
