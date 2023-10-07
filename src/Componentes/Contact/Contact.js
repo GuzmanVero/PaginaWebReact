@@ -40,12 +40,11 @@ function ComBodyContact(){
                     <td>
                         <p className="textboduC"><strong>En caso de una emergencia </strong></p>
                         <p className="textboduC">Contactanos a nuestro numero de Whatsapp.</p>
-                        <tr><td>
-                  <a href="https://web.whatsapp.com/">
-                  <img className='whats' src={whats} alt=""/> 
-                  </a>
-                  
-                  </td></tr>
+                        <center>
+                         <a href="https://web.whatsapp.com/">
+                         <img className='whats' src={whats} alt=""/> 
+                         </a>
+                         </center>
                        <p className="textboduC"> Si no puedes comunicarte puedes llegar a la veterinaria
                         O a tu veterinaria mas cercana.</p>
                     </td>

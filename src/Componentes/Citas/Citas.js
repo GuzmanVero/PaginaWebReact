@@ -19,9 +19,11 @@ function Citas() {
           
         </React.Fragment>
         </div>
+        <center>
         <div className='btn'>
           <ComCuenta/>
         </div>
+        </center>
       </div>
     );
 }
